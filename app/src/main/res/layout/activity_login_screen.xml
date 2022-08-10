@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg_color"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="90dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        app:srcCompat="@drawable/black_logo"
+        />
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginEnd="90dp"
+        android:background="#11000000"
+        android:drawableLeft="@drawable/ic_user_id_svgrepo_com"
+        android:ems="10"
+        android:textAlignment="center"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:textSize="16dp" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/etName"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="90dp"
+        android:background="#11000000"
+        android:drawableLeft="@drawable/ic_password_svgrepo_com"
+        android:ems="10"
+        android:textAlignment="center"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textSize="16dp" />
+
+    <CheckBox
+        android:id="@+id/cbHatirla"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etPassword"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:text="Beni Hatırla"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/btnLogin"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/etPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        app:cardBackgroundColor="@color/black"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="25dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Login"
+                android:textColor="#80898e"
+                android:textSize="18dp" />
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
