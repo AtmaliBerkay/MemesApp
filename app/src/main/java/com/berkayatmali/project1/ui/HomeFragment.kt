@@ -5,20 +5,14 @@ import android.content.SharedPreferences
 import android.os.Bundle
 import android.view.*
 import android.widget.Toast
-import android.widget.Toolbar
-import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.berkayatmali.project1.NewsDataModel
 import com.berkayatmali.project1.R
 import com.berkayatmali.project1.adapter.NewsAdapter
 import com.berkayatmali.project1.databinding.FragmentHomeBinding
-import kotlinx.android.synthetic.main.fragment_home.*
-import kotlinx.android.synthetic.main.news_row.*
-import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.Dispatchers
+import com.bumptech.glide.Glide
+import kotlinx.android.synthetic.main.news_row.view.*
 
 
 class HomeFragment : Fragment() {
